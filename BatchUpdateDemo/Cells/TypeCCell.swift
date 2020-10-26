@@ -7,8 +7,10 @@
 
 import UIKit
 
-class TypeCCell: UICollectionViewCell , CellProtocols{
-    func setupCell(index: Int) {
+class TypeCCell: MainCell , CellProtocols{
+    @IBOutlet weak var heightCConstaint: NSLayoutConstraint!
+    func setupCell(index: Int, data : MusicData) {
+        heightCConstaint.constant = data.height
         print("this is first time in c for cell \(self)")
     }
     

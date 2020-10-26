@@ -7,14 +7,22 @@
 
 import UIKit
 
-class TypeACell: UICollectionViewCell ,CellProtocols {
-    func setupCell(index: Int) {
+class TypeACell: MainCell ,CellProtocols {
+            
+    func setupCell(index: Int, data: MusicData) {
         print("this is A form index : \(index)" )
+        self.heightAConstraint.constant = data.height
+       
     }
- 
+    
+  
+    @IBOutlet weak var heightAConstraint: NSLayoutConstraint!
+    
     @IBOutlet weak var titleName: UILabel!
     override func awakeFromNib() {
         super.awakeFromNib()
+        self.layer.borderWidth = 2
+        self.layer.borderColor = UIColor.red.cgColor
         // Initialization code
     }
 

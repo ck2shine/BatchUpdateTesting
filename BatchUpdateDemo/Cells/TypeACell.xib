@@ -5,6 +5,7 @@
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
@@ -23,27 +24,36 @@
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zRs-P4-TqY">
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LD1-wN-d0R">
                         <rect key="frame" x="99.5" y="0.0" width="341.5" height="100"/>
-                        <state key="normal" title="Button"/>
-                    </button>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="height" relation="greaterThanOrEqual" priority="999" constant="100" id="KLP-E4-lNl"/>
+                        </constraints>
+                    </view>
                 </subviews>
             </view>
             <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
             <constraints>
                 <constraint firstItem="jw1-21-Wok" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="2OX-d5-60z"/>
+                <constraint firstAttribute="trailing" secondItem="LD1-wN-d0R" secondAttribute="trailing" id="Aoc-e1-dUG"/>
                 <constraint firstAttribute="bottom" secondItem="jw1-21-Wok" secondAttribute="bottom" id="P7N-jI-Mgi"/>
                 <constraint firstItem="jw1-21-Wok" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="Sen-gi-6XN"/>
-                <constraint firstItem="zRs-P4-TqY" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="T3p-zR-7Hm"/>
-                <constraint firstItem="zRs-P4-TqY" firstAttribute="leading" secondItem="jw1-21-Wok" secondAttribute="trailing" id="Wmy-S6-JMw"/>
-                <constraint firstAttribute="trailing" secondItem="zRs-P4-TqY" secondAttribute="trailing" id="dcn-XJ-CQE"/>
-                <constraint firstAttribute="bottom" secondItem="zRs-P4-TqY" secondAttribute="bottom" id="nxs-FX-C67"/>
+                <constraint firstItem="LD1-wN-d0R" firstAttribute="leading" secondItem="jw1-21-Wok" secondAttribute="trailing" id="Sjh-VG-k0d"/>
+                <constraint firstItem="LD1-wN-d0R" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="hSM-uO-816"/>
+                <constraint firstAttribute="bottom" secondItem="LD1-wN-d0R" secondAttribute="bottom" id="jX7-gw-iy9"/>
             </constraints>
             <size key="customSize" width="441" height="187"/>
             <connections>
+                <outlet property="heightAConstraint" destination="KLP-E4-lNl" id="mbi-Yd-qkL"/>
                 <outlet property="titleName" destination="jw1-21-Wok" id="CjV-Ak-URt"/>
             </connections>
-            <point key="canvasLocation" x="-12" y="72"/>
+            <point key="canvasLocation" x="-12.318840579710146" y="71.651785714285708"/>
         </collectionViewCell>
     </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
 </document>

@@ -22,6 +22,7 @@
 		14B53FD92546F888006258CC /* CellProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14B53FD82546F888006258CC /* CellProtocols.swift */; };
 		14B53FE32546FBFA006258CC /* TypeDCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14B53FE12546FBFA006258CC /* TypeDCell.swift */; };
 		14B53FE42546FBFA006258CC /* TypeDCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 14B53FE22546FBFA006258CC /* TypeDCell.xib */; };
+		14B53FEA25470539006258CC /* MainCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14B53FE925470539006258CC /* MainCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +43,7 @@
 		14B53FD82546F888006258CC /* CellProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellProtocols.swift; sourceTree = "<group>"; };
 		14B53FE12546FBFA006258CC /* TypeDCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TypeDCell.swift; sourceTree = "<group>"; };
 		14B53FE22546FBFA006258CC /* TypeDCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TypeDCell.xib; sourceTree = "<group>"; };
+		14B53FE925470539006258CC /* MainCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,6 +90,7 @@
 		146C07932546DFBF00170B6F /* Cells */ = {
 			isa = PBXGroup;
 			children = (
+				14B53FE825470522006258CC /* MainCell */,
 				14B53FC82546EDF4006258CC /* TypeACell.swift */,
 				14B53FC92546EDF4006258CC /* TypeACell.xib */,
 				14B53FCD2546EE04006258CC /* TypeBCell.swift */,
@@ -108,6 +111,14 @@
 				146C07962546E04F00170B6F /* MusicViewControler.xib */,
 			);
 			path = VCs;
+			sourceTree = "<group>";
+		};
+		14B53FE825470522006258CC /* MainCell */ = {
+			isa = PBXGroup;
+			children = (
+				14B53FE925470539006258CC /* MainCell.swift */,
+			);
+			path = MainCell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -191,6 +202,7 @@
 				14B53FD52546F273006258CC /* TypeCCell.swift in Sources */,
 				14B53FCF2546EE04006258CC /* TypeBCell.swift in Sources */,
 				14B53FE32546FBFA006258CC /* TypeDCell.swift in Sources */,
+				14B53FEA25470539006258CC /* MainCell.swift in Sources */,
 				146C07972546E04F00170B6F /* MusicViewControler.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -8,5 +8,5 @@
 import Foundation
 
 protocol CellProtocols : class {
-    func setupCell(index : Int)
+    func setupCell(index : Int , data : MusicData)
 }

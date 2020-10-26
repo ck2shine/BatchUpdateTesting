@@ -9,6 +9,7 @@ import UIKit
 
 struct MusicData {
     var nibName : String
+    var height : CGFloat
 }
 
 final class MusicViewControler: UIViewController {
@@ -34,28 +35,29 @@ extension MusicViewControler {
     
     final private func setupUI(){
         if let layout : UICollectionViewFlowLayout = dataCollectionView.collectionViewLayout as?UICollectionViewFlowLayout{
-            layout.itemSize = CGSize(width: UIScreen.main.bounds.width, height: 100)
+            layout.estimatedItemSize = CGSize(width: UIScreen.main.bounds.width, height: 50)
+//            layout.itemSize = CGSize(width: UIScreen.main.bounds.width, height: 100)
         }
     }
     
     final private func generateDataAry(){
-        data.append(MusicData(nibName: "TypeACell"))
-        data.append(MusicData(nibName: "TypeBCell"))
-        data.append(MusicData(nibName: "TypeACell"))
-        data.append(MusicData(nibName: "TypeACell"))
-        data.append(MusicData(nibName: "TypeDCell"))
-        data.append(MusicData(nibName: "TypeCCell"))
-        data.append(MusicData(nibName: "TypeACell"))
-        data.append(MusicData(nibName: "TypeACell"))
-        data.append(MusicData(nibName: "TypeACell"))
+        data.append(MusicData(nibName: "TypeACell", height: 100))
+        data.append(MusicData(nibName: "TypeBCell", height: 180))
+        data.append(MusicData(nibName: "TypeACell", height: 100))
+        data.append(MusicData(nibName: "TypeACell", height: 100))
+        data.append(MusicData(nibName: "TypeDCell", height: 130))
+        data.append(MusicData(nibName: "TypeCCell", height: 120))
+        data.append(MusicData(nibName: "TypeACell", height: 120))
+        data.append(MusicData(nibName: "TypeACell", height: 115))
+        data.append(MusicData(nibName: "TypeACell", height: 130))
         
     }
     
     final private func reUpdateTheTable(){
         
         DispatchQueue.global().asyncAfter(deadline: .now() + 4) {
-            let newMusciDataA = MusicData(nibName: "TypeACell")
-            let newMusciDataB = MusicData(nibName: "TypeBCell")
+            let newMusciDataA = MusicData(nibName: "TypeACell", height: 100)
+            let newMusciDataB = MusicData(nibName: "TypeBCell", height: 180)
             self.data.remove(at: 1)
             self.data.remove(at: 0)
             self.data.insert(contentsOf: [newMusciDataA,newMusciDataB], at: 0)
@@ -95,7 +97,7 @@ extension MusicViewControler : UICollectionViewDataSource{
         
         if let tempCell = cell as? CellProtocols{
             
-            tempCell.setupCell(index: indexPath.row)
+            tempCell.setupCell(index: indexPath.row, data : data[indexPath.row])
         }
         return cell
     }

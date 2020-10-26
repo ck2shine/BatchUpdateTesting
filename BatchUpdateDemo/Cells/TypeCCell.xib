@@ -51,6 +51,7 @@
                             <constraint firstItem="4uO-YC-CnD" firstAttribute="top" secondItem="Ug5-nZ-8kO" secondAttribute="top" id="SG3-g5-QT8"/>
                             <constraint firstItem="vYZ-Zc-evZ" firstAttribute="leading" secondItem="4uO-YC-CnD" secondAttribute="trailing" id="hav-0I-BSg"/>
                             <constraint firstItem="4uO-YC-CnD" firstAttribute="leading" secondItem="Ug5-nZ-8kO" secondAttribute="leading" id="j3f-gT-QNN"/>
+                            <constraint firstAttribute="height" priority="999" constant="160" id="xJL-yR-fDe"/>
                         </constraints>
                     </view>
                 </subviews>
@@ -63,6 +64,9 @@
                 <constraint firstItem="Ug5-nZ-8kO" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="vkc-Mk-soC"/>
             </constraints>
             <size key="customSize" width="487" height="160"/>
+            <connections>
+                <outlet property="heightCConstaint" destination="xJL-yR-fDe" id="Eyc-ji-cQk"/>
+            </connections>
             <point key="canvasLocation" x="252.89855072463769" y="137.94642857142856"/>
         </collectionViewCell>
     </objects>
