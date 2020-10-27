@@ -23,6 +23,12 @@
 		14B53FE32546FBFA006258CC /* TypeDCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14B53FE12546FBFA006258CC /* TypeDCell.swift */; };
 		14B53FE42546FBFA006258CC /* TypeDCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 14B53FE22546FBFA006258CC /* TypeDCell.xib */; };
 		14B53FEA25470539006258CC /* MainCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14B53FE925470539006258CC /* MainCell.swift */; };
+		45A1297B2547A3F400372C8B /* Box.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45A1297A2547A3F400372C8B /* Box.swift */; };
+		45A1297F2547A50F00372C8B /* TypeCViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45A1297E2547A50F00372C8B /* TypeCViewModel.swift */; };
+		45A1298B2547E65000372C8B /* Observable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45A1298A2547E65000372C8B /* Observable.swift */; };
+		45A1298F2547F60200372C8B /* CarListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45A1298D2547F60200372C8B /* CarListViewController.swift */; };
+		45A129902547F60200372C8B /* CarListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 45A1298E2547F60200372C8B /* CarListViewController.xib */; };
+		45A129932547F69400372C8B /* TypeTableACell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45A129922547F69400372C8B /* TypeTableACell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,6 +50,13 @@
 		14B53FE12546FBFA006258CC /* TypeDCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TypeDCell.swift; sourceTree = "<group>"; };
 		14B53FE22546FBFA006258CC /* TypeDCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TypeDCell.xib; sourceTree = "<group>"; };
 		14B53FE925470539006258CC /* MainCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCell.swift; sourceTree = "<group>"; };
+		45A1297A2547A3F400372C8B /* Box.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Box.swift; sourceTree = "<group>"; };
+		45A1297E2547A50F00372C8B /* TypeCViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TypeCViewModel.swift; sourceTree = "<group>"; };
+		45A129812547C00D00372C8B /* BatchUpdateDemo.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = BatchUpdateDemo.entitlements; sourceTree = "<group>"; };
+		45A1298A2547E65000372C8B /* Observable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Observable.swift; sourceTree = "<group>"; };
+		45A1298D2547F60200372C8B /* CarListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarListViewController.swift; sourceTree = "<group>"; };
+		45A1298E2547F60200372C8B /* CarListViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CarListViewController.xib; sourceTree = "<group>"; };
+		45A129922547F69400372C8B /* TypeTableACell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TypeTableACell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,7 +89,11 @@
 		146C077D2546DFB400170B6F /* BatchUpdateDemo */ = {
 			isa = PBXGroup;
 			children = (
+				45A129812547C00D00372C8B /* BatchUpdateDemo.entitlements */,
+				45A1298A2547E65000372C8B /* Observable.swift */,
+				45A1297A2547A3F400372C8B /* Box.swift */,
 				146C079A2546E05600170B6F /* VCs */,
+				45A1297D2547A4EA00372C8B /* ViewModels */,
 				146C07932546DFBF00170B6F /* Cells */,
 				146C077E2546DFB400170B6F /* AppDelegate.swift */,
 				146C07842546DFB400170B6F /* Main.storyboard */,
@@ -109,6 +126,9 @@
 			children = (
 				146C07952546E04F00170B6F /* MusicViewControler.swift */,
 				146C07962546E04F00170B6F /* MusicViewControler.xib */,
+				45A1298D2547F60200372C8B /* CarListViewController.swift */,
+				45A1298E2547F60200372C8B /* CarListViewController.xib */,
+				45A129922547F69400372C8B /* TypeTableACell.swift */,
 			);
 			path = VCs;
 			sourceTree = "<group>";
@@ -119,6 +139,14 @@
 				14B53FE925470539006258CC /* MainCell.swift */,
 			);
 			path = MainCell;
+			sourceTree = "<group>";
+		};
+		45A1297D2547A4EA00372C8B /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				45A1297E2547A50F00372C8B /* TypeCViewModel.swift */,
+			);
+			path = ViewModels;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -181,6 +209,7 @@
 				146C078B2546DFB800170B6F /* LaunchScreen.storyboard in Resources */,
 				146C07882546DFB800170B6F /* Assets.xcassets in Resources */,
 				14B53FCB2546EDF4006258CC /* TypeACell.xib in Resources */,
+				45A129902547F60200372C8B /* CarListViewController.xib in Resources */,
 				146C07862546DFB400170B6F /* Main.storyboard in Resources */,
 				14B53FE42546FBFA006258CC /* TypeDCell.xib in Resources */,
 				14B53FD62546F273006258CC /* TypeCCell.xib in Resources */,
@@ -196,13 +225,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				45A1298B2547E65000372C8B /* Observable.swift in Sources */,
+				45A1297B2547A3F400372C8B /* Box.swift in Sources */,
 				146C077F2546DFB400170B6F /* AppDelegate.swift in Sources */,
 				14B53FD92546F888006258CC /* CellProtocols.swift in Sources */,
 				14B53FCA2546EDF4006258CC /* TypeACell.swift in Sources */,
 				14B53FD52546F273006258CC /* TypeCCell.swift in Sources */,
 				14B53FCF2546EE04006258CC /* TypeBCell.swift in Sources */,
+				45A1298F2547F60200372C8B /* CarListViewController.swift in Sources */,
 				14B53FE32546FBFA006258CC /* TypeDCell.swift in Sources */,
+				45A129932547F69400372C8B /* TypeTableACell.swift in Sources */,
 				14B53FEA25470539006258CC /* MainCell.swift in Sources */,
+				45A1297F2547A50F00372C8B /* TypeCViewModel.swift in Sources */,
 				146C07972546E04F00170B6F /* MusicViewControler.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -350,15 +384,17 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = BatchUpdateDemo/BatchUpdateDemo.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = BatchUpdateDemo/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.brille.BatchUpdateDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 2;
 			};
@@ -369,15 +405,17 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = BatchUpdateDemo/BatchUpdateDemo.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = BatchUpdateDemo/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.brille.BatchUpdateDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 2;
 			};

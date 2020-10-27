@@ -66,6 +66,7 @@
             <size key="customSize" width="487" height="160"/>
             <connections>
                 <outlet property="heightCConstaint" destination="xJL-yR-fDe" id="Eyc-ji-cQk"/>
+                <outlet property="infoTextLabel" destination="4uO-YC-CnD" id="ryd-Cx-FXl"/>
             </connections>
             <point key="canvasLocation" x="252.89855072463769" y="137.94642857142856"/>
         </collectionViewCell>

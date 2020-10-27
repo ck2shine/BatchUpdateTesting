@@ -10,7 +10,7 @@ import UIKit
 class TypeBCell: MainCell , CellProtocols {
     func setupCell(index: Int, data : MusicData) {
         print("this is B form index : \(index)" )
-        heightBConstaint.constant = data.height
+//        heightBConstaint.constant = data.height
     }
     @IBOutlet weak var heightBConstaint: NSLayoutConstraint!
     

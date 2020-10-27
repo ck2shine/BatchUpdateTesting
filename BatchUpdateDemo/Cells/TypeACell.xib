@@ -26,9 +26,22 @@
                     </label>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LD1-wN-d0R">
                         <rect key="frame" x="99.5" y="0.0" width="341.5" height="100"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="86S-kQ-0J0">
+                                <rect key="frame" x="0.0" y="0.0" width="341.5" height="100"/>
+                                <state key="normal" title="TriggerA"/>
+                                <connections>
+                                    <action selector="TriggerAAction:" destination="gTV-IL-0wX" eventType="touchUpInside" id="8eF-Nt-kCO"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstAttribute="trailing" secondItem="86S-kQ-0J0" secondAttribute="trailing" id="1Av-W6-h4f"/>
                             <constraint firstAttribute="height" relation="greaterThanOrEqual" priority="999" constant="100" id="KLP-E4-lNl"/>
+                            <constraint firstAttribute="bottom" secondItem="86S-kQ-0J0" secondAttribute="bottom" id="bel-YK-tfz"/>
+                            <constraint firstItem="86S-kQ-0J0" firstAttribute="leading" secondItem="LD1-wN-d0R" secondAttribute="leading" id="kGY-7E-98d"/>
+                            <constraint firstItem="86S-kQ-0J0" firstAttribute="top" secondItem="LD1-wN-d0R" secondAttribute="top" id="nOE-BG-bif"/>
                         </constraints>
                     </view>
                 </subviews>
@@ -46,6 +59,7 @@
             <size key="customSize" width="441" height="187"/>
             <connections>
                 <outlet property="heightAConstraint" destination="KLP-E4-lNl" id="mbi-Yd-qkL"/>
+                <outlet property="titleALabel" destination="jw1-21-Wok" id="3tC-01-PTh"/>
                 <outlet property="titleName" destination="jw1-21-Wok" id="CjV-Ak-URt"/>
             </connections>
             <point key="canvasLocation" x="-12.318840579710146" y="71.651785714285708"/>

@@ -21,9 +21,9 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="stJ-pz-PqZ">
-                    <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                    <rect key="frame" x="0.0" y="70" width="1024" height="698"/>
                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                    <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="7k5-SZ-p0G">
+                    <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="0.0" id="7k5-SZ-p0G">
                         <size key="itemSize" width="128" height="128"/>
                         <size key="headerReferenceSize" width="0.0" height="0.0"/>
                         <size key="footerReferenceSize" width="0.0" height="0.0"/>
@@ -34,6 +34,33 @@
                         <outlet property="delegate" destination="-1" id="pKH-Bu-fxF"/>
                     </connections>
                 </collectionView>
+                <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="OkN-C1-w11">
+                    <rect key="frame" x="0.0" y="0.0" width="1024" height="70"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gz6-IY-qBJ">
+                            <rect key="frame" x="0.0" y="0.0" width="507" height="70"/>
+                            <color key="backgroundColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                            <state key="normal" title="insertRow">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                            <connections>
+                                <action selector="insertRowAction:" destination="-1" eventType="touchUpInside" id="GFn-wq-d2H"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bom-sm-Edo">
+                            <rect key="frame" x="517" y="0.0" width="507" height="70"/>
+                            <color key="backgroundColor" red="0.0" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                            <state key="normal" title="Delete Row">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                        </button>
+                    </subviews>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="70" id="k4x-3u-e4S"/>
+                    </constraints>
+                </stackView>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -41,9 +68,12 @@
                 <constraint firstItem="stJ-pz-PqZ" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="2Dv-Kf-2IX"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="stJ-pz-PqZ" secondAttribute="bottom" id="5Xl-4I-Onh"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="stJ-pz-PqZ" secondAttribute="trailing" id="GLg-tt-AXG"/>
-                <constraint firstItem="stJ-pz-PqZ" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="aCw-ot-0Mz"/>
+                <constraint firstItem="OkN-C1-w11" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="KMp-af-tuW"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="OkN-C1-w11" secondAttribute="trailing" id="Kdc-YR-QBu"/>
+                <constraint firstItem="OkN-C1-w11" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="gXl-YS-Gnd"/>
+                <constraint firstItem="stJ-pz-PqZ" firstAttribute="top" secondItem="OkN-C1-w11" secondAttribute="bottom" id="hY6-RA-ZIb"/>
             </constraints>
-            <point key="canvasLocation" x="142" y="89"/>
+            <point key="canvasLocation" x="141.796875" y="88.28125"/>
         </view>
     </objects>
     <resources>
